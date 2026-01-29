@@ -7,4 +7,5 @@ Thumbs.db
 *.log
 
 # Configuration (contient clés API)
+# config.js
 config.js
