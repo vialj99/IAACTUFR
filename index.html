@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🤖 IA Actu FR - Actualités IA en français</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="title">🤖 IA Actu FR</h1>
+            <p class="subtitle">Les dernières actualités en intelligence artificielle</p>
+            
+            <!-- Controls -->
+            <div class="controls">
+                <input 
+                    type="search" 
+                    id="search" 
+                    class="search-input" 
+                    placeholder="🔍 Rechercher un article..."
+                >
+                
+                <select id="source-filter" class="source-filter">
+                    <option value="all">Toutes les sources</option>
+                </select>
+                
+                <button id="refresh-btn" class="refresh-btn">
+                    🔄 Actualiser
+                </button>
+            </div>
+            
+            <!-- Filters -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">
+                    Tous les articles
+                </button>
+            </div>
+            
+            <!-- Toggle Favorites -->
+            <button id="toggle-favorites" class="toggle-favorites-btn">
+                ⭐ Mes articles sauvegardés (<span id="favorites-count">0</span>)
+            </button>
+        </header>
+        
+        <!-- Favorites Section -->
+        <section id="favorites-section" class="favorites-section hidden">
+            <h2 class="section-title">📑 Mes articles sauvegardés</h2>
+            <div id="favorites-grid" class="articles-grid"></div>
+        </section>
+        
+        <!-- Articles Grid -->
+        <section id="articles-grid" class="articles-grid"></section>
+        
+        <!-- Loading -->
+        <div id="loading" class="loading hidden">
+            <div class="spinner"></div>
+            <p>Chargement des actualités...</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <!-- Charger config AVANT script.js -->
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

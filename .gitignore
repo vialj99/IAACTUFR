@@ -1,0 +1,10 @@
+# Dependencies
+node_modules/
+
+# System files
+.DS_Store
+Thumbs.db
+*.log
+
+# Configuration (contient clés API)
+config.js
