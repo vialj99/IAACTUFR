@@ -3,7 +3,7 @@
 // ===========================
 
 // ─── Configuration API ──────────────────────────────────
-const API_KEY = CONFIG.API_KEY; // Remplacez par votre clé
+const API_KEY = '4218ec7114674c42a64afc0c184f1531'; // Remplacez par votre clé
 const API_URL = 'https://newsapi.org/v2/everything';
 const FAVORITES_KEY = 'iaactu_favorites';
 
